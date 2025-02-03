@@ -27,20 +27,22 @@
 			});
 		/* END MENU JS */
 		 
-		/* START ISOTOP JS */
-			var $grid = $('.work_content_area').isotope({
-			  // options
-			});
-			// filter items on button click
-			$('.work_filter').on( 'click', 'li', function() {
-			  var filterValue = $(this).attr('data-filter');
-			  $grid.isotope({ filter: filterValue });
-			});
-			// filter items on button click
-			$('.work_filter').on( 'click', 'li', function() {
-				$(this).addClass('active').siblings().removeClass('active')
-			});
-		/* END ISOTOP JS */
+        /* START ISOTOP JS */
+        var $grid = $('.work_content_area').isotope({
+            itemSelector: '.element-item',
+            layoutMode: 'fitRows'
+        });
+
+		$('.work_filter').on('click', 'li', function () {
+			var filterValue = $(this).attr('data-filter');
+		
+			$grid.isotope({ filter: filterValue }); // Langsung gunakan filterValue yang benar
+		
+			$(this).addClass('active').siblings().removeClass('active');
+		});
+		
+
+        /* END ISOTOP JS */
 		
 		/* START LIGHTBOX */
 		
