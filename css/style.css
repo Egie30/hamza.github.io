@@ -586,49 +586,34 @@ a:hover{
 /* ----------------------------------------------------------------
     [ 06 Start Service ]
 -----------------------------------------------------------------*/
-.single-service{
-	background: #fff;
-    padding: 35px 15px;
-	margin-bottom: 30px;
+/* Container untuk teks agar tetap sejajar */
+.single-service {
+    background: #fff;
+    padding: 35px 20px;
+    margin-bottom: 30px;
     text-align: center;
     transition: all 0.4s ease;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menjaga jarak antara elemen */
+    align-items: center;
 }
-.single-service:hover{
-	transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transition: transform 0.4s ease;
-    -webkit-transition: transform 0.4s ease;
+
+.single-service p {
+    text-align: justify; /* Menyelaraskan teks kiri-kanan */
+    font-size: 14px; /* Pastikan ukuran font seragam */
+    line-height: 1.8; /* Jarak antar baris */
+    color: #333333; /* Warna teks */
+    /* margin-top: 15px; Jarak atas */
+    flex-grow: 1; /* Menjaga teks agar fleksibel */
 }
+
 .single-service i {
-	width: 50px;
-    height: 50px;
-	line-height: 50px;
-	text-align: center;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-	transition: all 0.4s ease;
-    font-size: 20px;
-    display: inline-block;
-    color: #6f64e7;
+    margin-bottom: 20px; /* Jarak antara ikon dan teks */
 }
-.single-service h4{
-	color: #6f6767;
-    font-size: 15px;
-    margin-top: 22px;
-    text-transform: uppercase;
-	transition: all 0.4s ease;
-}
-.single-service:hover h4{
-	color: #6f64e7;
-}
-.single-service p{
-	transition: all 0.4s ease;
-	color: #333333;
-	margin-top: 15px;
-}
-.dark_bg .single-service p{
-	color: #fff;
-}
+
+
 /* ----------------------------------------------------------------
     [ End Service ]
 -----------------------------------------------------------------*/
