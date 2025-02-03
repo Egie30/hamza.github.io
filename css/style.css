@@ -829,7 +829,7 @@ a:hover{
 /* ----------------------------------------------------------------
     [ 13 Start Contact ]
 -----------------------------------------------------------------*/
-.form .form-group input{
+/* .form .form-group input{
 	background: transparent;
 	border-color: #e3e3e3;
     height: 40px;
@@ -849,7 +849,38 @@ a:hover{
 }
 .form .form-group textarea:focus{
 	border-color: #6f64e7;
+} */
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Jarak antar ikon */
+    flex-wrap: wrap; /* Membungkus ikon jika tidak cukup ruang */
+    margin-top: 30px;
 }
+
+.contact-item {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-item i {
+    font-size: 40px;
+    color: #7564e5; /* Warna ikon */
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-item a:hover {
+    color: #7564e5;
+    text-decoration: underline;
+}
+
 /* ----------------------------------------------------------------
     [ End Contact ]
 -----------------------------------------------------------------*/
